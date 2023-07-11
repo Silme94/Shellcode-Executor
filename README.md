@@ -4,8 +4,8 @@
 
 2. Clone the project
 ```
-git clone 
-cd
+git clone https://github.com/Silme94/Shellcode-Executor
+cd Shellcode-Executor
 ```
 3. Open main.cpp and change the shellcode to what you want.
 
